@@ -7,7 +7,7 @@ PASTA_DADOS = PASTA_PROJETO / "dados"
 
 # coloque abaixo o caminho para os arquivos de dados de seu projeto
 DADOS_ORIGINAIS = PASTA_DADOS / "ml_project1_data.csv"
-DADOS_TRATADOS = PASTA_DADOS / "ml_project1_data_tratado.csv"
+DADOS_TRATADOS = PASTA_DADOS / "ml_project1_data_tratado.parquet"
 
 # coloque abaixo o caminho para os arquivos de modelos de seu projeto
 PASTA_MODELOS = PASTA_PROJETO / "modelos"
