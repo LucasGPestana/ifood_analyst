@@ -30,3 +30,20 @@ def pairplot(df: pd.DataFrame, columns: List[str], hue_column: str) -> None:
     )
 
     plt.show()
+
+def plot_bivariate_boxplot(df: pd.DataFrame, columns: List[str], x_cat_column: str, hue_cat_column: str=None) -> None:
+
+    fig, axs = plt.subplots(5, 1, figsize=(8, 16), sharex=True)
+
+    for ax, column in zip(axs, columns):
+
+        sns.boxplot(
+            df,
+            x=x_cat_column,
+            y=column,
+            hue=hue_cat_column,
+            showmeans=True,
+            ax=ax,
+        )
+
+    plt.show()
