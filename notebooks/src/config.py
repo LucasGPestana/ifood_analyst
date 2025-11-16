@@ -1,18 +1,19 @@
 from pathlib import Path
 
 
-PASTA_PROJETO = Path(__file__).resolve().parents[2]
+PROJECT_DIRPATH = Path(__file__).resolve().parents[2]
 
-PASTA_DADOS = PASTA_PROJETO / "dados"
+DATA_DIRPATH = PROJECT_DIRPATH / "data"
 
 # coloque abaixo o caminho para os arquivos de dados de seu projeto
-DADOS_ORIGINAIS = PASTA_DADOS / "ml_project1_data.csv"
-DADOS_DUMMIES = PASTA_DADOS / "ml_project1_data_dummies.csv"
-DADOS_TRATADOS = PASTA_DADOS / "ml_project1_data_tratado.parquet"
+DADOS_ORIGINAIS = DATA_DIRPATH / "ml_project1_data.csv"
+DADOS_DUMMIES = DATA_DIRPATH / "ml_project1_data_dummies.csv"
+DADOS_TRATADOS = DATA_DIRPATH / "ml_project1_data_tratado.parquet"
+DADOS_CLUSTERIZADOS = DATA_DIRPATH / "clustered_data.parquet"
 
 # coloque abaixo o caminho para os arquivos de modelos de seu projeto
-PASTA_MODELOS = PASTA_PROJETO / "modelos"
+PASTA_MODELOS = PROJECT_DIRPATH / "modelos"
 
 # coloque abaixo outros caminhos que você julgar necessário
-PASTA_RELATORIOS = PASTA_PROJETO / "relatorios"
-PASTA_IMAGENS = PASTA_RELATORIOS / "imagens"
+REPORTS_DIRPATH = PROJECT_DIRPATH / "relatorios"
+IMAGES_DIRPATH = REPORTS_DIRPATH / "imagens"
