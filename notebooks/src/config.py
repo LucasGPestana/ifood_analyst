@@ -5,15 +5,14 @@ PROJECT_DIRPATH = Path(__file__).resolve().parents[2]
 
 DATA_DIRPATH = PROJECT_DIRPATH / "data"
 
-# coloque abaixo o caminho para os arquivos de dados de seu projeto
-DADOS_ORIGINAIS = DATA_DIRPATH / "ml_project1_data.csv"
-DADOS_DUMMIES = DATA_DIRPATH / "ml_project1_data_dummies.csv"
-DADOS_TRATADOS = DATA_DIRPATH / "ml_project1_data_tratado.parquet"
-DADOS_CLUSTERIZADOS = DATA_DIRPATH / "clustered_data.parquet"
+ORIGINAL_DATA = DATA_DIRPATH / "ml_project1_data.csv"
+DUMMIES_DATA = DATA_DIRPATH / "ml_project1_data_dummies.csv"
+CLEANED_DATA = DATA_DIRPATH / "ml_project1_data_tratado.parquet"
+CLUSTERED_DATA = DATA_DIRPATH / "clustered_data.parquet"
 
-# coloque abaixo o caminho para os arquivos de modelos de seu projeto
-PASTA_MODELOS = PROJECT_DIRPATH / "modelos"
+MODELS_DIRPATH = PROJECT_DIRPATH / "models"
 
-# coloque abaixo outros caminhos que você julgar necessário
+FINAL_MODEL_FILEPATH = MODELS_DIRPATH / "logreg_preprocessing_undersampling.joblib"
+
 REPORTS_DIRPATH = PROJECT_DIRPATH / "relatorios"
 IMAGES_DIRPATH = REPORTS_DIRPATH / "imagens"
